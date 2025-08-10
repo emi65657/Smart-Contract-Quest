@@ -1,0 +1,15 @@
+[package]
+name = "starkquest"
+version = "0.1.0"
+edition = "2023_11"
+
+[dependencies]
+starknet = "2.4.0"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.8.1" }
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[tool.snforge]
+starknet = "2.4.0"

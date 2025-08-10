@@ -1,0 +1,17 @@
+# Deployment configuration for StarkQuest
+[network]
+name = "starknet-testnet"
+rpc_url = "https://starknet-testnet.public.blastapi.io"
+account = "katana-0"
+
+[contracts]
+starkquest = { class_hash = "0x...", constructor_args = ["0x...", "0x..."] }
+
+[optimization]
+gas_limit = 1000000
+max_fee = "1000000000000000"
+optimize_for_size = true
+
+[deployment]
+verify = true
+wait_for_confirmation = true
